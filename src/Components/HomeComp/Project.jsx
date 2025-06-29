@@ -58,7 +58,8 @@ const Project = ({ project, isDarkMode }) => {
             )}
           </Link>
           <Link
-            to={""}
+            target="_blank"
+            to={project.githubRepo}
             className="custom-border-bottom flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary)] "
           >
             <p>See On Github</p>

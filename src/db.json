@@ -1,26 +1,29 @@
 {
   "project": [
     {
-      "title": "Promotional landing page for our favorite show",
-      "description": "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
-      "year": 2023,
+      "title": "StreamVibe",
+      "description": "Your gateway to trending movies and TV shows. A modern, responsive web app built with React (and TMDB API) that lets users explore trending, top-rated, and upcoming movies and series. Features include real-time data fetching, search functionality, and a clean user interface designed for smooth navigation and discovery.",
+      "year": 2025,
       "role": "Front-end Developer",
-      "image": "/testWork1.png"
+      "image": "/StreamVibe.png",
+      "githubRepo": "https://github.com/EgzonBllacaa/StreamVibe"
     },
     {
-      "title": "Blog site for World News",
-      "description": "Mastered CSS Grid complexities in building an innovative news homepage, navigating intricate design decisions for a seamless user experience. Leveraged the challenge to enhance skills in  front-end development.",
+      "title": "Photography Portfolio",
+      "description": "A stunning portfolio template for modern photographers, Snapfolio is a clean, responsive portfolio website designed to showcase photography work in an elegant and visually captivating layout. It includes smooth image galleries, fullscreen previews, and a minimal UI that puts the focus on the visuals. Perfect for freelancers, professional photographers, or visual artists looking to make a lasting impression.",
       "client": "World News",
-      "year": 2022,
+      "year": 2025,
       "role": "Front-end Developer",
-      "image": "/testWork2.png"
+      "image": "/Photography-Portfolio.png",
+      "githubRepo": "https://github.com/EgzonBllacaa/Riard-Portfolio"
     },
     {
-      "title": "E-commerce product page",
-      "description": "Successfully crafted an engaging product page featuring a dynamic lightbox gallery and seamless cart functionality, showcasing proficiency in JavaScript development.",
+      "title": "ShopEase Landing Page",
+      "description": "A sleek, modern landing page for online stores. ShopEase is a fully responsive e-commerce landing page crafted with HTML, CSS, and JavaScript. Designed to highlight products effectively with clean layouts, engaging call-to-actions, and smooth animations. Ideal for startups or brands looking to showcase their products and drive conversions.",
       "year": 2022,
       "role": "Front-end Developer",
-      "image": "/testWork3.png"
+      "image": "/Ecommerce.png",
+      "githubRepo": "https://github.com/EgzonBllacaa/E-commerce"
     }
   ],
   "about": {
