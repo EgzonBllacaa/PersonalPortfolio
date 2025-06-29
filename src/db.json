@@ -1,0 +1,48 @@
+{
+  "project": [
+    {
+      "title": "Promotional landing page for our favorite show",
+      "description": "Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures.",
+      "year": 2023,
+      "role": "Front-end Developer",
+      "image": "/testWork1.png"
+    },
+    {
+      "title": "Blog site for World News",
+      "description": "Mastered CSS Grid complexities in building an innovative news homepage, navigating intricate design decisions for a seamless user experience. Leveraged the challenge to enhance skills in  front-end development.",
+      "client": "World News",
+      "year": 2022,
+      "role": "Front-end Developer",
+      "image": "/testWork2.png"
+    },
+    {
+      "title": "E-commerce product page",
+      "description": "Successfully crafted an engaging product page featuring a dynamic lightbox gallery and seamless cart functionality, showcasing proficiency in JavaScript development.",
+      "year": 2022,
+      "role": "Front-end Developer",
+      "image": "/testWork3.png"
+    }
+  ],
+  "about": {
+    "title": "About me",
+    "description": {
+      "header": "I'm a front-end developer based in Prishtina, passionate about building intuitive and accessible web experiences.",
+      "body": "My journey into development began with a focused course, where I quickly gained a strong foundation in HTML, CSS, and JavaScript and for a framework I studied ReactJS. Since then, I've deepened my skills through extensive self-study and hands-on coding, culminating in a portfolio that showcases my capabilities. My projects include a news website demonstrating API integration, a dynamic movie blog with search and filtering functionalities, and an e-commerce site powered by Strapi headless CMS and Stripe payment integration. I'm constantly eager to learn more and tackle new challenges in the front-end space."
+    }
+  },
+  "capabilities": {
+    "title": "My Capabilities",
+    "description": {
+      "header": "I'm proficient in skills below, with a continuous drive to learn. My goal is to consistently grow my skillset, adding new technologies and deeper expertise every month. ",
+      "body": [
+        "Html",
+        "Css",
+        "JavaScript",
+        "ReactJS",
+        "Tailwind css",
+        "Node.js",
+        "Express.js"
+      ]
+    }
+  }
+}

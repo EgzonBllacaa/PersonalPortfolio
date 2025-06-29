@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Light mode (default) */
+:root {
+  --bg-custom-color: #e2e2e2;
+  --bg-input-color: #424242;
+  --color-primary: #46500f;
+  --color-neutral: #000000;
+  --color-neutral_off_white: #2c2c2c;
+  --color-neutral_dark_gray: #292929;
+  --font-Manrope: Manrope;
+  --font-BebasNeue: BebasNeue;
+}
+
+/* Dark mode overrides */
+.dark {
+  --bg-custom-color: #020202;
+  --bg-input-color: #b3b3b3;
+  --color-primary: #d3e97a;
+  --color-neutral: #fff;
+  --color-neutral_off_white: #e6e6e6;
+  --color-neutral_dark_gray: #484848;
+}
+
+@layer utilities {
+  .custom-border-bottom {
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+  }
+
+  .custom-scale {
+    transition: all 600ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .custom-scale:hover {
+    transform: scale(105%) translateY(-10px);
+    border: 4px solid var(--color-primary);
+  }
+
+  .custom-scale-btns {
+    transition: all 120ms ease-in-out;
+    cursor: pointer;
+  }
+
+  .custom-scale-btns:hover {
+    transform: scale(105%);
+  }
+}

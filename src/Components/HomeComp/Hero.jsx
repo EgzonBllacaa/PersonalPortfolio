@@ -1,0 +1,35 @@
+import React from "react";
+import CodeImg from "../../assets/CodeImg.jpg";
+import ContactMeBtns from "../Components/ContactMeBtns";
+
+const Hero = ({ contactRef }) => {
+  return (
+    <>
+      <div className="flex flex-wrap md:flex-nowrap items-center justify-between gap-20 border-b-1 border-[#424242] pb-20">
+        <div className="flex flex-col gap-10 w-xl">
+          <div className="flex flex-col gap-2">
+            <h1 className=" font-BebasNeue text-[var(--color-neutral)] font-black text-4xl leading-tight md:text-6xl  lg:text-8xl lg:leading-26">
+              Hi, I am Egzon Bllaca.
+            </h1>
+            <p className="text-[var(--color-neutral_off_white)] lg:text-lg">
+              A Prishtina based front-end developer passionate about building
+              accessible and user frindly websites.
+            </p>
+          </div>
+          <div className="flex items-center gap-4">
+            <ContactMeBtns contactRef={contactRef} />
+          </div>
+        </div>
+        <div className="max-w-[600px] w-full">
+          <img
+            className="min-w-80 rounded-xl custom-scale"
+            src={CodeImg}
+            alt=""
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Hero;
