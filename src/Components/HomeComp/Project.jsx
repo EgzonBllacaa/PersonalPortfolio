@@ -47,7 +47,7 @@ const Project = ({ project, isDarkMode }) => {
         </div>
         <div className="flex items-center gap-6 uppercase">
           <Link
-            to={""}
+            to={project.live}
             className="custom-border-bottom flex items-center border-b-2 border-red-900 gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary)] "
           >
             Live Demo{" "}
