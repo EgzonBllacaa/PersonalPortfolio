@@ -58,18 +58,20 @@ const Project = ({ project, isDarkMode }) => {
               <img className="w-6 h-6" src={arrowUp} alt="" />
             )}
           </Link>
-          <Link
-            target="_blank"
-            to={project.githubRepo}
-            className="custom-border-bottom flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary)] "
-          >
-            <p>See On Github</p>
-            {isDarkMode ? (
-              <img src={githubSVGDark} alt="" />
-            ) : (
-              <img src={github} alt="" />
-            )}
-          </Link>
+          {project.github && (
+            <Link
+              target="_blank"
+              to={project.githubRepo}
+              className="custom-border-bottom flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary)] "
+            >
+              <p>See On Github</p>
+              {isDarkMode ? (
+                <img src={githubSVGDark} alt="" />
+              ) : (
+                <img src={github} alt="" />
+              )}
+            </Link>
+          )}
         </div>
       </div>
     </div>
