@@ -7,7 +7,7 @@
       "role": "Front-end Developer",
       "image": "/StreamVibe.png",
       "githubRepo": "https://github.com/EgzonBllacaa/StreamVibe",
-      "live": "https://e-commerce-tawny-one-57.vercel.app/"
+      "live": "https://stream-vibe-k4e334po5-egzonbllacaas-projects.vercel.app/"
     },
     {
       "title": "Photography Portfolio",
@@ -16,7 +16,8 @@
       "year": 2025,
       "role": "Front-end Developer",
       "image": "/Photography-Portfolio.png",
-      "githubRepo": "https://github.com/EgzonBllacaa/Riard-Portfolio"
+      "githubRepo": "https://github.com/EgzonBllacaa/Riard-Portfolio",
+      "live": "https://portfolio-page-ebon-three.vercel.app/"
     },
     {
       "title": "ShopEase Landing Page",
@@ -24,7 +25,8 @@
       "year": 2022,
       "role": "Front-end Developer",
       "image": "/Ecommerce.png",
-      "githubRepo": "https://github.com/EgzonBllacaa/E-commerce"
+      "githubRepo": "https://github.com/EgzonBllacaa/E-commerce",
+      "live": "https://e-commerce-tawny-one-57.vercel.app/"
     }
   ],
   "about": {
