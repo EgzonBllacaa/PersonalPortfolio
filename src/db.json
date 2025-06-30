@@ -20,9 +20,17 @@
       "live": "https://portfolio-page-ebon-three.vercel.app/"
     },
     {
+      "title": "🍫 SweetHouses",
+      "description": "Delightful chocolates, beautifully showcased.SweetHouse is a modern, responsive React website that highlights delicious chocolate products and store location details. Featuring dynamic product galleries, smooth animations, and seamless navigation, it offers an engaging user experience perfect for chocolatiers and sweet shops eager to captivate customers online.",
+      "year": 2025,
+      "role": "Front-end Developer",
+      "image": "/SweetHouse.png",
+      "live": "https://www.sweethousegroup.com/"
+    },
+    {
       "title": "ShopEase Landing Page",
       "description": "A sleek, modern landing page for online stores. ShopEase is a fully responsive e-commerce landing page crafted with HTML, CSS, and JavaScript. Designed to highlight products effectively with clean layouts, engaging call-to-actions, and smooth animations. Ideal for startups or brands looking to showcase their products and drive conversions.",
-      "year": 2022,
+      "year": 2025,
       "role": "Front-end Developer",
       "image": "/Ecommerce.png",
       "githubRepo": "https://github.com/EgzonBllacaa/E-commerce",
