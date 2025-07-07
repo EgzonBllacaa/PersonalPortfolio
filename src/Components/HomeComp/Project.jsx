@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import github from "../../assets/github.png";
 import githubSVGDark from "../../assets/githubDark.png";
 import ArrowUpDark from "../../assets/arrowDark.png";
-import arrow from "../../assets/arrow.png";
+import arrow from "../../assets/right-up.png";
 import Reveal from "../Reveal";
 import { useDarkMode } from "../../context/Context";
 
