@@ -15,6 +15,7 @@ const Navbar = ({ contactRef, projectRef }) => {
   const handleScrollandCloseMenu = (ref) => {
     handleScroll(ref);
     setIsOpen(false);
+    // Test
   };
 
   const toggleMenu = () => {
