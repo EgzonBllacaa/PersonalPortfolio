@@ -23,7 +23,7 @@ const ContactMeBtns = ({ contactRef }) => {
             <div className={`p-1 bg-black rounded-2xl`}></div>
           </button>
         </Reveal>
-        <Reveal delay={1} overflow="visible" width="w-full">
+        <Reveal delay={1} overflow="visible">
           <Link
             target="_blank"
             to={"https://github.com/EgzonBllacaa"}
@@ -36,7 +36,7 @@ const ContactMeBtns = ({ contactRef }) => {
             )}
           </Link>
         </Reveal>
-        <Reveal delay={1.2} ease="easeInOut" width="w-full">
+        <Reveal delay={1.2} ease="easeInOut">
           <Link
             target="_blank"
             to={"https://www.linkedin.com/in/egzon-bllaca-2b727828a/"}
