@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import github from "../../assets/github.png";
-import githubSVGDark from "../../assets/githubSVGDark.png";
-import ArrowUpDark from "../../assets/ArrowUpDark.png";
-import arrowUp from "../../assets/icons8-arrow-48.png";
+import githubSVGDark from "../../assets/githubDark.png";
+import ArrowUpDark from "../../assets/arrowDark.png";
+import arrow from "../../assets/arrow.png";
 import Reveal from "../Reveal";
+import { useDarkMode } from "../../context/Context";
 
-const Project = ({ project, isDarkMode }) => {
+const Project = ({ project }) => {
+  const { isDarkMode } = useDarkMode();
   return (
     <Reveal>
       <div className="flex flex-wrap items-center gap-10 lg:gap-12">
@@ -62,9 +64,9 @@ const Project = ({ project, isDarkMode }) => {
               >
                 Live Demo{" "}
                 {isDarkMode ? (
-                  <img className="w-3 h-3" src={ArrowUpDark} alt="" />
+                  <img className="w-6 h-6" src={ArrowUpDark} alt="" />
                 ) : (
-                  <img className="w-6 h-6" src={arrowUp} alt="" />
+                  <img className="w-6 h-6" src={arrow} alt="" />
                 )}
               </Link>
             </Reveal>

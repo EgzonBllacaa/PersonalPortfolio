@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../Components/HomeComp/Hero";
 import FeaturedProjects from "../Components/HomeComp/FeaturedProjects";
 import AboutMe from "../Components/AboutComp/AboutMe";

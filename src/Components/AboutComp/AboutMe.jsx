@@ -2,11 +2,12 @@ import db from "../../db.json";
 import { Link, useLocation } from "react-router-dom";
 import ContactMeBtns from "../Components/ContactMeBtns";
 import Reveal from "../Reveal";
+import { useDarkMode } from "../../context/Context";
 
 const AboutMe = () => {
   const location = useLocation();
-
   const isHome = location.pathname === "/";
+  const { isDarkMode } = useDarkMode();
 
   console.log(db.about);
   return (
@@ -46,7 +47,7 @@ const AboutMe = () => {
                   )}
                 </div>
               </div>
-              <ContactMeBtns />
+              <ContactMeBtns isDarkMode={isDarkMode} />
             </div>
           </div>
         ) : (

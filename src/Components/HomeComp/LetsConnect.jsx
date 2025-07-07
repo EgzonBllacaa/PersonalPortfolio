@@ -1,19 +1,19 @@
 import { useRef } from "react";
-
 import Form from "./Form";
-
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
 import x from "../../assets/X.png";
 import instagram from "../../assets/instagram.png";
-import githubDark from "../../assets/githubSVGDark.png";
+import githubDark from "../../assets/githubDark.png";
 import instagramDark from "../../assets/instagramDark.png";
 import xDark from "../../assets/xSVGDark.png";
-import linkedinSvgDark from "../../assets/linkedinSvgDark.png";
+import linkedinDark from "../../assets/linkedinDark.png";
 import Reveal from "../Reveal";
+import { useDarkMode } from "../../context/Context";
 
-const LetsConnect = ({ contactRef, isDarkMode }) => {
+const LetsConnect = ({ contactRef }) => {
   const inputRef = useRef(null);
+  const { isDarkMode } = useDarkMode();
   return (
     <Reveal width="w-full">
       <div
@@ -33,7 +33,7 @@ const LetsConnect = ({ contactRef, isDarkMode }) => {
                     className="custom-border-bottom cursor-pointer hover:text-[var(--color-neutral)] "
                     onClick={() => inputRef.current.focus()}
                   >
-                    egzonbllaca.tech@gmail.com
+                    egzon.tech@gmail.com
                   </span>
                 </p>
                 <p className="text-[var(--color-neutral)] ">
@@ -70,7 +70,7 @@ const LetsConnect = ({ contactRef, isDarkMode }) => {
               ) : (
                 <img
                   className="max-w-9 custom-scale-btns"
-                  src={linkedinSvgDark}
+                  src={linkedinDark}
                   alt=""
                 />
               )}

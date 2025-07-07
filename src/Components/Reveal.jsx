@@ -12,7 +12,7 @@ const Reveal = ({
   const isInView = useInView(RevealRef, { once: true });
 
   return (
-    <div ref={RevealRef} style={{ overflow, width }}>
+    <div ref={RevealRef} className={(overflow, width)}>
       <motion.div
         initial="hidden"
         variants={{

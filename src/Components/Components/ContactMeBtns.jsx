@@ -1,40 +1,52 @@
 import github from "../../assets/github.png";
+
 import linkedin from "../../assets/linkedin.png";
+import githubDark from "../../assets/githubDark.png";
+import linkedinDark from "../../assets/linkedinDark.png";
 import { Link } from "react-router-dom";
-import arrow from "../../assets/Arrow.png";
 import useScroll from "../hooks/useScroll";
 import Reveal from "../Reveal";
+import { useDarkMode } from "../../context/Context";
 
 const ContactMeBtns = ({ contactRef }) => {
   const handleScroll = useScroll();
+  const { isDarkMode } = useDarkMode();
   return (
     <>
       <div className="flex items-center gap-2">
         <Reveal overflow="visible">
           <button
             onClick={() => handleScroll(contactRef)}
-            className="flex custom-scale-btns cursor-pointer justify-between visible font-bold gap-3 items-center uppercase text-[var(--bg-custom-color)] py-3 pr-6 pl-4.5 bg-[var(--color-primary)] rounded-3xl"
+            className="flex text-nowrap custom-scale-btns cursor-pointer justify-between visible font-bold gap-3 items-center uppercase text-[var(--bg-custom-color)] py-3 pr-6 pl-4.5 bg-[var(--color-primary)] rounded-3xl"
           >
             Contact me
-            <div className={`px-3 ml-1 py-3 md:p-1 bg-black rounded-2xl`}>
-              <img className="block md:hidden" src={arrow} alt="" />
-            </div>
+            <div className={`p-1 bg-black rounded-2xl`}></div>
           </button>
         </Reveal>
         <Reveal delay={1} overflow="visible" width="w-full">
           <Link
-            to={""}
+            target="_blank"
+            to={"https://github.com/EgzonBllacaa"}
             className="px-2 py-1 cursor-pointer custom-scale-btns rounded-2xl"
           >
-            <img className="max-w-6" src={github} />
+            {isDarkMode ? (
+              <img className="max-w-6" src={github} />
+            ) : (
+              <img className="w-full max-w-6" src={githubDark} />
+            )}
           </Link>
         </Reveal>
         <Reveal delay={1.2} ease="easeInOut" width="w-full">
           <Link
-            to={""}
+            target="_blank"
+            to={"https://www.linkedin.com/in/egzon-bllaca-2b727828a/"}
             className="px-2 py-1 cursor-pointer custom-scale-btns rounded-2xl"
           >
-            <img className="max-w-6" src={linkedin} />
+            {isDarkMode ? (
+              <img className="max-w-6" src={linkedin} />
+            ) : (
+              <img className="max-w-6" src={linkedinDark} />
+            )}
           </Link>
         </Reveal>
       </div>

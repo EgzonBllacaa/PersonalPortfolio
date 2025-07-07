@@ -30,15 +30,15 @@ const Hero = ({ contactRef }) => {
               </Reveal>
             </div>
           </div>
-          <Reveal delay={0.3}>
-            <div className="max-w-[600px] w-full">
+          <div className="max-w-[600px] w-full">
+            <Reveal delay={0.3} className={"w-full"}>
               <img
-                className="min-w-80 rounded-xl custom-scale"
+                className="w-full min-w-80 rounded-xl custom-scale"
                 src={CodeImg}
                 alt=""
               />
-            </div>
-          </Reveal>
+            </Reveal>
+          </div>
         </div>
       </Reveal>
     </>

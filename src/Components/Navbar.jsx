@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useDarkMode } from "../context/Context";
-// import lightMode from "../assets/light-mode.png";
 import nightMode from "../assets/night-mode.png";
 import lightMode from "../assets/brightness.png";
 import useScroll from "./hooks/useScroll";
@@ -28,7 +27,7 @@ const Navbar = ({ contactRef, projectRef }) => {
         <li>
           <button
             onClick={() => handleScrollandCloseMenu(projectRef)}
-            className="text-[var(--color-neutral_off_white)] font-medium cursor-pointer custom-scale-btns"
+            className="text-[var(--color-neutral_off_white)]  font-medium cursor-pointer custom-scale-btns"
           >
             Projects
           </button>
@@ -56,7 +55,7 @@ const Navbar = ({ contactRef, projectRef }) => {
 
       <button
         onClick={toggleDarkMode}
-        className="text-[var(--color-neutral_off_white)] font-medium cursor-pointer dark:text-red-500 custom-scale-btns"
+        className="text-[var(--color-neutral)] font-medium cursor-pointer dark:text-red-500 custom-scale-btns"
       >
         {isDarkMode ? (
           <img className="max-w-6" src={lightMode} alt="max-w-" />
@@ -82,7 +81,14 @@ const Navbar = ({ contactRef, projectRef }) => {
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
         >
-          <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+          {isDarkMode ? (
+            <FontAwesomeIcon
+              className="text-white"
+              icon={isOpen ? faTimes : faBars}
+            />
+          ) : (
+            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+          )}
         </button>
 
         <ul className="items-center justify-center hidden gap-8 md:flex">
@@ -90,7 +96,7 @@ const Navbar = ({ contactRef, projectRef }) => {
         </ul>
 
         {isOpen && (
-          <ul className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-black bg-opacity-90 md:hidden">
+          <ul className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-[var(--bg-custom-color)] bg-opacity-90 md:hidden">
             {navLinks}
           </ul>
         )}
