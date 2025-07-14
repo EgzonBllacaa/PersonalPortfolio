@@ -8,7 +8,7 @@ import Reveal from "../Reveal";
 import { useDarkMode } from "../../context/Context";
 
 const Project = ({ project }) => {
-  const { isDarkMode } = useDarkMode();
+  const { isLightMode } = useDarkMode();
   return (
     <Reveal>
       <div className="flex flex-wrap items-center gap-10 lg:gap-12">
@@ -63,7 +63,7 @@ const Project = ({ project }) => {
                 className="custom-border-bottom flex items-center border-b-2 border-red-900 gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary)] "
               >
                 Live Demo{" "}
-                {isDarkMode ? (
+                {isLightMode ? (
                   <img className="w-6 h-6" src={ArrowUpDark} alt="" />
                 ) : (
                   <img className="w-6 h-6" src={arrow} alt="" />
@@ -77,7 +77,7 @@ const Project = ({ project }) => {
                 className="custom-border-bottom flex items-center gap-2 text-[var(--color-primary)] hover:text-[var(--color-primary)] "
               >
                 <p>See On Github</p>
-                {isDarkMode ? (
+                {isLightMode ? (
                   <img src={githubSVGDark} alt="" />
                 ) : (
                   <img src={github} alt="" />

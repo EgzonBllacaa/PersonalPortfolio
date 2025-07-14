@@ -7,7 +7,7 @@ import { useDarkMode } from "../../context/Context";
 const AboutMe = () => {
   const location = useLocation();
   const isHome = location.pathname === "/";
-  const { isDarkMode } = useDarkMode();
+  const { isLightMode } = useDarkMode();
 
   console.log(db.about);
   return (
@@ -47,7 +47,7 @@ const AboutMe = () => {
                   )}
                 </div>
               </div>
-              <ContactMeBtns isDarkMode={isDarkMode} />
+              <ContactMeBtns isLightMode={isLightMode} />
             </div>
           </div>
         ) : (

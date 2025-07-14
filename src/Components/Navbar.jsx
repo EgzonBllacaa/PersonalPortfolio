@@ -9,7 +9,7 @@ import useScroll from "./hooks/useScroll";
 
 const Navbar = ({ contactRef, projectRef }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
+  const { isLightMode, toggleDarkMode } = useDarkMode();
   const handleScroll = useScroll();
 
   const handleScrollandCloseMenu = (ref) => {
@@ -58,7 +58,7 @@ const Navbar = ({ contactRef, projectRef }) => {
         onClick={toggleDarkMode}
         className="text-[var(--color-neutral)] font-medium cursor-pointer dark:text-red-500 custom-scale-btns"
       >
-        {isDarkMode ? (
+        {isLightMode ? (
           <img className="max-w-6" src={lightMode} alt="max-w-" />
         ) : (
           <img className="max-w-6" src={nightMode} alt="max-w-4" />
@@ -82,7 +82,7 @@ const Navbar = ({ contactRef, projectRef }) => {
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
         >
-          {isDarkMode ? (
+          {isLightMode ? (
             <FontAwesomeIcon
               className="text-white"
               icon={isOpen ? faTimes : faBars}

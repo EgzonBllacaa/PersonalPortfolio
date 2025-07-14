@@ -13,7 +13,7 @@ import { useDarkMode } from "../../context/Context";
 
 const LetsConnect = ({ contactRef }) => {
   const inputRef = useRef(null);
-  const { isDarkMode } = useDarkMode();
+  const { isLightMode } = useDarkMode();
   return (
     <Reveal width="w-full">
       <div
@@ -48,7 +48,7 @@ const LetsConnect = ({ contactRef }) => {
               </div>
             </div>
             <div className="flex items-center gap-6">
-              {isDarkMode ? (
+              {isLightMode ? (
                 <img
                   className="max-w-9 custom-scale-btns"
                   src={instagram}
@@ -61,7 +61,7 @@ const LetsConnect = ({ contactRef }) => {
                   alt=""
                 />
               )}
-              {isDarkMode ? (
+              {isLightMode ? (
                 <img
                   className="max-w-9 custom-scale-btns"
                   src={linkedin}
@@ -74,7 +74,7 @@ const LetsConnect = ({ contactRef }) => {
                   alt=""
                 />
               )}
-              {isDarkMode ? (
+              {isLightMode ? (
                 <img
                   className="max-w-9 custom-scale-btns"
                   src={github}
@@ -87,7 +87,7 @@ const LetsConnect = ({ contactRef }) => {
                   alt=""
                 />
               )}
-              {isDarkMode ? (
+              {isLightMode ? (
                 <img className="max-w-7 custom-scale-btns" src={x} alt="" />
               ) : (
                 <img className="max-w-7 custom-scale-btns" src={xDark} alt="" />

@@ -10,7 +10,7 @@ import { useDarkMode } from "../../context/Context";
 
 const ContactMeBtns = ({ contactRef }) => {
   const handleScroll = useScroll();
-  const { isDarkMode } = useDarkMode();
+  const { isLightMode } = useDarkMode();
   return (
     <>
       <div className="flex items-center gap-2">
@@ -29,7 +29,7 @@ const ContactMeBtns = ({ contactRef }) => {
             to={"https://github.com/EgzonBllacaa"}
             className="px-2 py-1 cursor-pointer custom-scale-btns rounded-2xl"
           >
-            {isDarkMode ? (
+            {isLightMode ? (
               <img className="max-w-6" src={github} />
             ) : (
               <img className="w-full max-w-6" src={githubDark} />
@@ -42,7 +42,7 @@ const ContactMeBtns = ({ contactRef }) => {
             to={"https://www.linkedin.com/in/egzon-bllaca-2b727828a/"}
             className="px-2 py-1 cursor-pointer custom-scale-btns rounded-2xl"
           >
-            {isDarkMode ? (
+            {isLightMode ? (
               <img className="max-w-6" src={linkedin} />
             ) : (
               <img className="max-w-6" src={linkedinDark} />
