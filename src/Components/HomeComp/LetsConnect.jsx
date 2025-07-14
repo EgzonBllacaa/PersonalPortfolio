@@ -51,39 +51,39 @@ const LetsConnect = ({ contactRef }) => {
               {isLightMode ? (
                 <img
                   className="max-w-9 custom-scale-btns"
-                  src={instagram}
+                  src={instagramDark}
                   alt=""
                 />
               ) : (
                 <img
                   className="max-w-9 custom-scale-btns"
-                  src={instagramDark}
+                  src={instagram}
                   alt=""
                 />
               )}
               {isLightMode ? (
-                <img
-                  className="max-w-9 custom-scale-btns"
-                  src={linkedin}
-                  alt=""
-                />
-              ) : (
                 <img
                   className="max-w-9 custom-scale-btns"
                   src={linkedinDark}
                   alt=""
                 />
+              ) : (
+                <img
+                  className="max-w-9 custom-scale-btns"
+                  src={linkedin}
+                  alt=""
+                />
               )}
               {isLightMode ? (
                 <img
                   className="max-w-9 custom-scale-btns"
-                  src={github}
+                  src={githubDark}
                   alt=""
                 />
               ) : (
                 <img
                   className="max-w-9 custom-scale-btns"
-                  src={githubDark}
+                  src={github}
                   alt=""
                 />
               )}

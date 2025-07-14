@@ -59,9 +59,9 @@ const Navbar = ({ contactRef, projectRef }) => {
         className="text-[var(--color-neutral)] font-medium cursor-pointer dark:text-red-500 custom-scale-btns"
       >
         {isLightMode ? (
-          <img className="max-w-6" src={lightMode} alt="max-w-" />
+          <img className="max-w-6" src={nightMode} alt="max-w-" />
         ) : (
-          <img className="max-w-6" src={nightMode} alt="max-w-4" />
+          <img className="max-w-6" src={lightMode} alt="max-w-4" />
         )}
       </button>
     </>

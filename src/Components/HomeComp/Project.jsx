@@ -64,9 +64,9 @@ const Project = ({ project }) => {
               >
                 Live Demo{" "}
                 {isLightMode ? (
-                  <img className="w-6 h-6" src={ArrowUpDark} alt="" />
-                ) : (
                   <img className="w-6 h-6" src={arrow} alt="" />
+                ) : (
+                  <img className="w-6 h-6" src={ArrowUpDark} alt="" />
                 )}
               </Link>
             </Reveal>
@@ -78,9 +78,9 @@ const Project = ({ project }) => {
               >
                 <p>See On Github</p>
                 {isLightMode ? (
-                  <img src={githubSVGDark} alt="" />
-                ) : (
                   <img src={github} alt="" />
+                ) : (
+                  <img src={githubSVGDark} alt="" />
                 )}
               </Link>
             )}

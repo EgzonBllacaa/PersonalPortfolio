@@ -30,9 +30,9 @@ const ContactMeBtns = ({ contactRef }) => {
             className="px-2 py-1 cursor-pointer custom-scale-btns rounded-2xl"
           >
             {isLightMode ? (
-              <img className="max-w-6" src={github} />
+              <img className="max-w-6" src={githubDark} />
             ) : (
-              <img className="w-full max-w-6" src={githubDark} />
+              <img className="w-full max-w-6" src={github} />
             )}
           </Link>
         </Reveal>
@@ -43,9 +43,9 @@ const ContactMeBtns = ({ contactRef }) => {
             className="px-2 py-1 cursor-pointer custom-scale-btns rounded-2xl"
           >
             {isLightMode ? (
-              <img className="max-w-6" src={linkedin} />
-            ) : (
               <img className="max-w-6" src={linkedinDark} />
+            ) : (
+              <img className="max-w-6" src={linkedin} />
             )}
           </Link>
         </Reveal>
