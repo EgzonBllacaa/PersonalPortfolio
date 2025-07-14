@@ -21,7 +21,7 @@ const Hero = ({ contactRef }) => {
 
               <p className="text-[var(--color-neutral_off_white)] lg:text-lg">
                 A Prishtina based front-end developer passionate about building
-                accessible and user frindly websites.
+                accessible and user friendly websites.
               </p>
             </div>
             <div className="flex items-center gap-4">
