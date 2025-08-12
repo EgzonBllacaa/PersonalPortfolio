@@ -88,9 +88,9 @@ const LetsConnect = ({ contactRef }) => {
                 />
               )}
               {isLightMode ? (
-                <img className="max-w-7 custom-scale-btns" src={x} alt="" />
-              ) : (
                 <img className="max-w-7 custom-scale-btns" src={xDark} alt="" />
+              ) : (
+                <img className="max-w-7 custom-scale-btns" src={x} alt="" />
               )}
             </div>
           </div>

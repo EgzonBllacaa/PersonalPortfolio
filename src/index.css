@@ -6,8 +6,8 @@
   --bg-input-color: #b3b3b3;
   --color-primary: #c7d849;
   --color-neutral: #fff;
+  --color-neutral_dark_gray: #131313;
   --color-neutral_off_white: #e6e6e6;
-  --color-neutral_dark_gray: #484848;
   --font-Manrope: Manrope;
   --font-BebasNeue: BebasNeue;
 }
@@ -19,7 +19,9 @@
   --color-primary: #546439;
   --color-neutral: #000000;
   --color-neutral_off_white: #2c2c2c;
-  --color-neutral_dark_gray: #292929;
+  --color-neutral_dark_gray: #d6d6d6;
+  --font-Manrope: Manrope;
+  --font-BebasNeue: BebasNeue;
 }
 
 @layer utilities {

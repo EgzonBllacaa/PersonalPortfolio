@@ -1,6 +1,15 @@
 {
   "project": [
     {
+      "title": "3legant",
+      "description": "A modern, responsive e-commerce website for a fashion brand, showcasing a wide range of products with a sleek design and user-friendly interface. Built with React, it features dynamic product listings, smooth animations, and an intuitive shopping experience. Also it has article section.",
+      "year": 2025,
+      "role": "Front-end Developer",
+      "image": "/3legant.png",
+      "githubRepo": "https://github.com/EgzonBllacaa/E-commerce",
+      "live": "https://e-commerce-tawny-one-57.vercel.app/"
+    },
+    {
       "title": "StreamVibe",
       "description": "Your gateway to trending movies and TV shows. A modern, responsive web app built with React (and TMDB API) that lets users explore trending, top-rated, and upcoming movies and series. Features include real-time data fetching, search functionality, and a clean user interface designed for smooth navigation and discovery.",
       "year": 2025,
@@ -26,15 +35,6 @@
       "role": "Front-end Developer",
       "image": "/SweetHouse.png",
       "live": "https://www.sweethousegroup.com/"
-    },
-    {
-      "title": "ShopEase Landing Page",
-      "description": "A sleek, modern landing page for online stores. ShopEase is a fully responsive e-commerce landing page crafted with HTML, CSS, and JavaScript. Designed to highlight products effectively with clean layouts, engaging call-to-actions, and smooth animations. Ideal for startups or brands looking to showcase their products and drive conversions.",
-      "year": 2025,
-      "role": "Front-end Developer",
-      "image": "/Ecommerce.png",
-      "githubRepo": "https://github.com/EgzonBllacaa/E-commerce",
-      "live": "https://e-commerce-tawny-one-57.vercel.app/"
     }
   ],
   "about": {

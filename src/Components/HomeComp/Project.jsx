@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import github from "../../assets/github.png";
 import githubSVGDark from "../../assets/githubDark.png";
@@ -11,12 +10,12 @@ const Project = ({ project }) => {
   const { isLightMode } = useDarkMode();
   return (
     <Reveal>
-      <div className="flex flex-wrap items-center gap-10 lg:gap-12">
-        <div className="lg:w-2/5 min-w-[300px] bg-[#1A1A1A] border-0 rounded-3xl px-10 py-10">
+      <div className="flex flex-wrap gap-10 lg:gap-12">
+        <div className="w-full px-10 py-10 border-0 bg-[var(--color-neutral_dark_gray)] lg:max-w-2/5 rounded-3xl">
           <img
-            className="w-full transition-all ease-in-out cursor-pointer hover:scale-105 duration-600"
+            className="object-contain w-full h-full bg-[var(--bg-custom-color)] transition-all ease-in-out cursor-pointer lg:object-cover hover:scale-105 duration-600"
             src={project.image}
-            alt=""
+            alt={project.title}
           />
         </div>
         <div className="flex flex-col gap-12 lg:w-2/4">
@@ -70,7 +69,7 @@ const Project = ({ project }) => {
                 )}
               </Link>
             </Reveal>
-            {project.github && (
+            {project.githubRepo && (
               <Link
                 target="_blank"
                 to={project.githubRepo}
@@ -78,9 +77,9 @@ const Project = ({ project }) => {
               >
                 <p>See On Github</p>
                 {isLightMode ? (
-                  <img src={github} alt="" />
-                ) : (
                   <img src={githubSVGDark} alt="" />
+                ) : (
+                  <img src={github} alt="" />
                 )}
               </Link>
             )}
