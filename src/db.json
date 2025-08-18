@@ -2,12 +2,12 @@
   "project": [
     {
       "title": "3legant",
-      "description": "A modern, responsive e-commerce website for a fashion brand, showcasing a wide range of products with a sleek design and user-friendly interface. Built with React, it features dynamic product listings, smooth animations, and an intuitive shopping experience. Also it has article section.",
+      "description": "A modern, fully responsive e-commerce website for a fashion brand, integrated with the DummyJSON API for product data and Stripe for secure checkout. The platform showcases a wide range of products with a sleek design and user-friendly interface. Built with React, it features dynamic product listings, smooth animations, and an intuitive shopping experience. Additionally, it includes an articles/blog section to engage users with fashion-related content.",
       "year": 2025,
       "role": "Front-end Developer",
       "image": "/3legant.png",
       "githubRepo": "https://github.com/EgzonBllacaa/E-commerce",
-      "live": "https://e-commerce-tawny-one-57.vercel.app/"
+      "live": "https://e-commerce-three-livid-71.vercel.app/"
     },
     {
       "title": "StreamVibe",
