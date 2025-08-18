@@ -74,7 +74,6 @@ const Navbar = ({ contactRef, projectRef }) => {
           <Link to="/">egzon bllaca</Link>
         </span>
       </div>
-
       <div className="relative">
         <button
           className="relative z-50 text-2xl cursor-pointer md:hidden"
@@ -83,12 +82,12 @@ const Navbar = ({ contactRef, projectRef }) => {
           aria-expanded={isOpen}
         >
           {isLightMode ? (
+            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+          ) : (
             <FontAwesomeIcon
               className="text-white"
               icon={isOpen ? faTimes : faBars}
             />
-          ) : (
-            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
           )}
         </button>
 

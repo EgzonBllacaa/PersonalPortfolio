@@ -18,15 +18,15 @@ const LetsConnect = ({ contactRef }) => {
     <Reveal width="w-full">
       <div
         ref={contactRef}
-        className="flex flex-wrap min-w-full py-16 lg:gap-30 xl:gap-70 gap-30 lg:py-20"
+        className="flex flex-wrap min-w-full gap-10 py-4 sm:py-12 lg:gap-30 xl:gap-70 sm:gap-30 lg:py-6"
       >
         <div className="flex flex-col justify-between w-fit">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-4">
-              <h3 className="lg:text-7xl text-5xl font-black text-[var(--color-neutral)] text-nowrap lg:tracking-tighter">
+              <h3 className="lg:text-7xl sm:text-5xl text-3xl font-black text-[var(--color-neutral)] text-nowrap lg:tracking-tighter">
                 Let's Connect
               </h3>
-              <div>
+              <div className="text-sm sm:text-base">
                 <p className="text-[var(--color-neutral)]">
                   Say hello at{" "}
                   <span
@@ -98,7 +98,7 @@ const LetsConnect = ({ contactRef }) => {
             @{new Date().getFullYear()} Egzon Bllaca
           </span>
         </div>
-        <div className="flex-1 flex flex-col gap-20 xl:min-w-[400px] lg:min-w-[205px]">
+        <div className="flex-1 flex flex-col sm:min-w-[500px] gap-20 xl:min-w-[400px] lg:min-w-[205px]">
           <Form contactRef={contactRef} inputRef={inputRef} />
           <span className="text-[var(--color-neutral)] block lg:hidden ">
             @{new Date().getFullYear()} Egzon Bllaca

@@ -11,12 +11,14 @@ const Project = ({ project }) => {
   return (
     <Reveal>
       <div className="flex flex-wrap gap-10 lg:gap-12">
-        <div className="w-full px-10 py-10 border-0 bg-[var(--color-neutral_dark_gray)] lg:max-w-2/5 rounded-3xl">
-          <img
-            className="object-contain w-full h-full bg-[var(--bg-custom-color)] transition-all ease-in-out cursor-pointer lg:object-cover hover:scale-105 duration-600"
-            src={project.image}
-            alt={project.title}
-          />
+        <div className="w-full px-10 py-10 h-fit border-0 bg-[var(--color-neutral_dark_gray)] lg:max-w-2/5 rounded-3xl">
+          <Link target="_blank" to={project.live}>
+            <img
+              className="object-contain w-full  bg-[var(--bg-custom-color)] transition-all ease-in-out cursor-pointer lg:object-cover hover:scale-105 duration-600"
+              src={project.image}
+              alt={project.title}
+            />
+          </Link>
         </div>
         <div className="flex flex-col gap-12 lg:w-2/4">
           <div className="flex flex-col gap-8">

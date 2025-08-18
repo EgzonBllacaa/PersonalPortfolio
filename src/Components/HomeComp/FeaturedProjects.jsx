@@ -12,7 +12,7 @@ const FeaturedProjects = ({ projectRef }) => {
         className="flex flex-col gap-20 py-20 border-b-1 border-[#424242]"
       >
         <div>
-          <h3 className="lg:text-7xl text-4xl text-nowrap font-black text-[var(--color-neutral_off_white)] mb-2">
+          <h3 className="lg:text-7xl md:text-4xl sm:text-3xl text-2xl text-nowrap font-black text-[var(--color-neutral_off_white)] mb-2">
             Featured Projects
           </h3>
           <p className="lg:text-lg text-[var(--color-neutral_off_white)]">

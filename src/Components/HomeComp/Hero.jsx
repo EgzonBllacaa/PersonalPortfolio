@@ -33,7 +33,7 @@ const Hero = ({ contactRef }) => {
           <div className="max-w-[600px] w-full">
             <Reveal delay={0.3} className={"w-full"}>
               <img
-                className="w-full min-w-80 rounded-xl custom-scale"
+                className="w-full sm:min-w-80 rounded-xl custom-scale"
                 src={CodeImg}
                 alt=""
               />
