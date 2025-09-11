@@ -30,7 +30,14 @@ const Project = ({ project }) => {
               </Reveal>
               <Reveal delay={0.8}>
                 <p className="text-lg text-[var(--color-neutral_off_white)]">
-                  {project.description}
+                  {Array.isArray(project.description)
+                    ? project.description.map((line, i) => (
+                        <span key={i}>
+                          {line}
+                          <br />
+                        </span>
+                      ))
+                    : project.description}
                 </p>
               </Reveal>
             </div>

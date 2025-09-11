@@ -1,6 +1,21 @@
 {
   "project": [
     {
+      "title": "Flicker",
+      "description": [
+        "A full-stack social media app where users can create posts, like and comment on others’ posts, and manage their profiles.",
+        "Each profile greets the user and optionally allows them to provide more information via a simple form.",
+        "Built with React, TypeScript, and Tailwind CSS on the front-end, Express.js on the back-end, MySQL with Prisma ORM, and JWT authentication.",
+        "Front-end is deployed on Vercel, back-end on Render, and the database on Railway.",
+        "A practical project demonstrating full-stack development, responsive design, and interactive user features."
+      ],
+      "year": 2025,
+      "role": "Full-stack Developer",
+      "image": "/Flicker.png",
+      "githubRepo": "https://github.com/EgzonBllacaa/SocialMedia",
+      "live": "https://social-media-sigma-two.vercel.app/"
+    },
+    {
       "title": "3legant",
       "description": "A modern, fully responsive e-commerce website for a fashion brand, integrated with the DummyJSON API for product data and Stripe for secure checkout. The platform showcases a wide range of products with a sleek design and user-friendly interface. Built with React, it features dynamic product listings, smooth animations, and an intuitive shopping experience. Additionally, it includes an articles/blog section to engage users with fashion-related content.",
       "year": 2025,
