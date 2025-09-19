@@ -3,52 +3,103 @@
     {
       "title": "Flicker",
       "description": [
-        "A full-stack social media app where users can create posts, like and comment on others’ posts, and manage their profiles.",
-        "Each profile greets the user and optionally allows them to provide more information via a simple form.",
-        "Built with React, TypeScript, and Tailwind CSS on the front-end, Express.js on the back-end, MySQL with Prisma ORM, and JWT authentication.",
-        "Front-end is deployed on Vercel, back-end on Render, and the database on Railway.",
-        "A practical project demonstrating full-stack development, responsive design, and interactive user features."
+        "Full-stack social media app where users can create posts, like, comment, and manage profiles.",
+        "Each profile greets the user and includes an optional info form.",
+        "Tech Stack: React, TypeScript, Tailwind CSS, Express.js, MySQL (Prisma ORM), JWT Auth.",
+        "Deployment: Frontend on Vercel, Backend on Render, Database on Railway."
       ],
       "year": 2025,
       "role": "Full-stack Developer",
-      "image": "/Flicker.png",
+      "images": [
+        "/Flicker.png",
+        "/Flicker-2.png",
+        "/Flicker-3.png",
+        "/Flicker-4.png",
+        "/Flicker-5.png"
+      ],
       "githubRepo": "https://github.com/EgzonBllacaa/SocialMedia",
       "live": "https://social-media-sigma-two.vercel.app/"
     },
     {
       "title": "3legant",
-      "description": "A modern, fully responsive e-commerce website for a fashion brand, integrated with the DummyJSON API for product data and Stripe for secure checkout. The platform showcases a wide range of products with a sleek design and user-friendly interface. Built with React, it features dynamic product listings, smooth animations, and an intuitive shopping experience. Additionally, it includes an articles/blog section to engage users with fashion-related content.",
+      "description": [
+        "Responsive fashion e-commerce site with dynamic product listings, secure Stripe checkout, and a blog section for fashion content.",
+        "Tech Stack: React, Tailwind CSS, DummyJSON API, Stripe",
+        "Deployment: Frontend on Vercel."
+      ],
       "year": 2025,
       "role": "Front-end Developer",
-      "image": "/3legant.png",
+      "images": [
+        "/3legant.png",
+        "/3legant-2.png",
+        "/3legant-3.png",
+        "/3legant-4.png",
+        "/3legant-5.png",
+        "/3legant-6.png",
+        "/3legant-7.png",
+        "/3legant-8.png"
+      ],
       "githubRepo": "https://github.com/EgzonBllacaa/E-commerce",
       "live": "https://e-commerce-three-livid-71.vercel.app/"
     },
     {
       "title": "StreamVibe",
-      "description": "Your gateway to trending movies and TV shows. A modern, responsive web app built with React (and TMDB API) that lets users explore trending, top-rated, and upcoming movies and series. Features include real-time data fetching, search functionality, and a clean user interface designed for smooth navigation and discovery.",
+      "description": [
+        "Responsive web app for exploring trending, top-rated, and upcoming movies/TV shows with search and smooth navigation.",
+        "Tech Stack: React, TMDB API, Tailwind CSS"
+      ],
       "year": 2025,
       "role": "Front-end Developer",
-      "image": "/StreamVibe.png",
+      "images": [
+        "/StreamVibe.png",
+        "/StreamVibe-2.png",
+        "/StreamVibe-3.png",
+        "/StreamVibe-4.png",
+        "/StreamVibe-5.png",
+        "/StreamVibe-6.png",
+        "/StreamVibe-7.png"
+      ],
       "githubRepo": "https://github.com/EgzonBllacaa/StreamVibe",
       "live": "https://stream-vibe-black.vercel.app/"
     },
     {
       "title": "Photography Portfolio",
-      "description": "A stunning portfolio template for modern photographers, Snapfolio is a clean, responsive portfolio website designed to showcase photography work in an elegant and visually captivating layout. It includes smooth image galleries, fullscreen previews, and a minimal UI that puts the focus on the visuals. Perfect for freelancers, professional photographers, or visual artists looking to make a lasting impression.",
+      "description": [
+        "Responsive portfolio site with elegant image galleries, fullscreen previews, and a minimal UI to showcase photography work.",
+        "Tech Stack: React, Tailwind CSS"
+      ],
       "client": "World News",
       "year": 2025,
       "role": "Front-end Developer",
-      "image": "/Photography-Portfolio.png",
+      "images": [
+        "/Photography-Portfolio.png",
+        "/Photography-Portfolio-2.png",
+        "/Photography-Portfolio-3.png",
+        "/Photography-Portfolio-4.png",
+        "/Photography-Portfolio-6.png",
+        "/Photography-Portfolio-7.png",
+        "/Photography-Portfolio-8.png",
+        "/Photography-Portfolio-9.png",
+        "/Photography-Portfolio-10.png"
+      ],
       "githubRepo": "https://github.com/EgzonBllacaa/Riard-Portfolio",
       "live": "https://portfolio-page-ebon-three.vercel.app/"
     },
     {
       "title": "SweetHouse",
-      "description": "Delightful chocolates, beautifully showcased.SweetHouse is a modern, responsive React website that highlights delicious chocolate products and store location details. Featuring dynamic product galleries, smooth animations, and seamless navigation, it offers an engaging user experience perfect for chocolatiers and sweet shops eager to captivate customers online.",
+      "description": [
+        "Responsive React site showcasing chocolate products and store info, with dynamic galleries, smooth animations, seamless navigation, and multilingual support.",
+        "Tech Stack: React, Tailwind CSS, i18n (for multilingual support)"
+      ],
       "year": 2025,
       "role": "Front-end Developer",
-      "image": "/SweetHouse.png",
+      "images": [
+        "/sweethouse-1.png",
+        "/sweethouse-2.png",
+        "/sweethouse-3.png",
+        "/sweethouse-4.png",
+        "/sweethouse-5.png"
+      ],
       "live": "https://www.sweethousegroup.com/"
     }
   ],

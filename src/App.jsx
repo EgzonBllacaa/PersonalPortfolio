@@ -7,6 +7,7 @@ import { useRef } from "react";
 const App = () => {
   const contactRef = useRef(null);
   const projectRef = useRef(null);
+  const aboutMe = useRef(null);
 
   return (
     <Router>
@@ -15,7 +16,13 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Home projectRef={projectRef} contactRef={contactRef} />}
+            element={
+              <Home
+                projectRef={projectRef}
+                contactRef={contactRef}
+                aboutMe={aboutMe}
+              />
+            }
           />
           <Route path="/about" element={<About />} />
         </Routes>

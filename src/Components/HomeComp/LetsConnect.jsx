@@ -10,6 +10,7 @@ import xDark from "../../assets/xSVGDark.png";
 import linkedinDark from "../../assets/linkedinDark.png";
 import Reveal from "../Reveal";
 import { useDarkMode } from "../../context/Context";
+import { Link } from "react-router-dom";
 
 const LetsConnect = ({ contactRef }) => {
   const inputRef = useRef(null);
@@ -48,57 +49,75 @@ const LetsConnect = ({ contactRef }) => {
               </div>
             </div>
             <div className="flex items-center gap-6">
-              {isLightMode ? (
-                <img
-                  className="max-w-9 custom-scale-btns"
-                  src={instagramDark}
-                  alt=""
-                />
-              ) : (
-                <img
-                  className="max-w-9 custom-scale-btns"
-                  src={instagram}
-                  alt=""
-                />
-              )}
-              {isLightMode ? (
-                <img
-                  className="max-w-9 custom-scale-btns"
-                  src={linkedinDark}
-                  alt=""
-                />
-              ) : (
-                <img
-                  className="max-w-9 custom-scale-btns"
-                  src={linkedin}
-                  alt=""
-                />
-              )}
-              {isLightMode ? (
-                <img
-                  className="max-w-9 custom-scale-btns"
-                  src={githubDark}
-                  alt=""
-                />
-              ) : (
-                <img
-                  className="max-w-9 custom-scale-btns"
-                  src={github}
-                  alt=""
-                />
-              )}
-              {isLightMode ? (
-                <img className="max-w-7 custom-scale-btns" src={xDark} alt="" />
-              ) : (
-                <img className="max-w-7 custom-scale-btns" src={x} alt="" />
-              )}
+              <Link
+                to={"https://www.instagram.com/egzonbllacaa/"}
+                target="_blank"
+              >
+                {isLightMode ? (
+                  <img
+                    className="max-w-9 custom-scale-btns"
+                    src={instagramDark}
+                    alt=""
+                  />
+                ) : (
+                  <img
+                    className="max-w-9 custom-scale-btns"
+                    src={instagram}
+                    alt=""
+                  />
+                )}
+              </Link>
+              <Link
+                to={"https://www.linkedin.com/in/egzon-bllaca-2b727828a/"}
+                target="_blank"
+              >
+                {isLightMode ? (
+                  <img
+                    className="max-w-9 custom-scale-btns"
+                    src={linkedinDark}
+                    alt=""
+                  />
+                ) : (
+                  <img
+                    className="max-w-9 custom-scale-btns"
+                    src={linkedin}
+                    alt=""
+                  />
+                )}
+              </Link>
+              <Link to={"https://github.com/EgzonBllacaa"} target="_blank">
+                {isLightMode ? (
+                  <img
+                    className="max-w-9 custom-scale-btns"
+                    src={githubDark}
+                    alt=""
+                  />
+                ) : (
+                  <img
+                    className="max-w-9 custom-scale-btns"
+                    src={github}
+                    alt=""
+                  />
+                )}
+              </Link>
+              <Link to={"https://x.com"} target="_blank">
+                {isLightMode ? (
+                  <img
+                    className="max-w-7 custom-scale-btns"
+                    src={xDark}
+                    alt=""
+                  />
+                ) : (
+                  <img className="max-w-7 custom-scale-btns" src={x} alt="" />
+                )}
+              </Link>
             </div>
           </div>
           <span className="text-[var(--color-neutral)] hidden lg:block">
             @{new Date().getFullYear()} Egzon Bllaca
           </span>
         </div>
-        <div className="flex-1 flex flex-col sm:min-w-[500px] gap-20 xl:min-w-[400px] lg:min-w-[205px]">
+        <div className="flex-1 flex flex-col min-w-full sm:min-w-full gap-20 xl:min-w-[400px] lg:min-w-[205px]">
           <Form contactRef={contactRef} inputRef={inputRef} />
           <span className="text-[var(--color-neutral)] block lg:hidden ">
             @{new Date().getFullYear()} Egzon Bllaca

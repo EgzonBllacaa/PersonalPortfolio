@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import ContactMeBtns from "../Components/ContactMeBtns";
 import Reveal from "../Reveal";
 import { useDarkMode } from "../../context/Context";
+import { useEffect } from "react";
 
 const AboutMe = () => {
   const location = useLocation();
@@ -10,6 +11,14 @@ const AboutMe = () => {
   const { isLightMode } = useDarkMode();
 
   console.log(db.about);
+  useEffect(() => {
+    if (location.state?.scrollTarget === "about") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [location]);
   return (
     <>
       <Reveal>
@@ -33,10 +42,11 @@ const AboutMe = () => {
                   {isHome ? (
                     <div className="flex flex-col items-end">
                       <h6 className="text-[var(--color-neutral)] lg:text-lg">
-                        {db.about.description.body.slice(0, 100)}...
+                        {db.about.description.body.slice(0, 300)}...
                       </h6>
                       <Link
                         to={"/about"}
+                        state={{ scrollTarget: "about" }}
                         className="px-4 py-1 font-medium border rounded-3xl"
                       >
                         Read more
