@@ -117,7 +117,7 @@ const LetsConnect = ({ contactRef }) => {
             @{new Date().getFullYear()} Egzon Bllaca
           </span>
         </div>
-        <div className="flex-1 flex flex-col min-w-full sm:min-w-full gap-20 xl:min-w-[400px] lg:min-w-[205px]">
+        <div className="flex-1 flex flex-col min-w-30 sm:min-w-full gap-20 xl:min-w-[400px] lg:min-w-[205px]">
           <Form contactRef={contactRef} inputRef={inputRef} />
           <span className="text-[var(--color-neutral)] block lg:hidden ">
             @{new Date().getFullYear()} Egzon Bllaca

@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Light mode (default) */
+/* Dark Mode (default) */
 :root {
   --bg-custom-color: #020202;
   --bg-input-color: #b3b3b3;
@@ -12,7 +12,7 @@
   --font-BebasNeue: BebasNeue;
 }
 
-/* Dark mode overrides */
+/* Light mode overrides */
 .light {
   --bg-custom-color: #e2e2e2;
   --bg-input-color: #424242;

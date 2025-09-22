@@ -49,15 +49,15 @@ const Accordion = () => {
   };
 
   return (
-    <div className="flex flex-col gap-8 p-8 py-20 border-b sm:py-30">
+    <div className="flex flex-col gap-8 p-8 py-20 border-b sm:py-30 text-[var(--color-neutral)]">
       <div className="flex flex-col items-center gap-4">
-        <button className="px-5 py-2 font-medium border rounded-4xl bg-zinc-300">
+        <button className="px-5 py-2 font-medium border rounded-4xl bg-[var(--color-neutral_dark_gray)]">
           FAQ Section
         </button>
-        <span className="text-3xl font-bold text-center">
+        <span className="text-3xl font-bold text-center text-[var(--color-neutral_off_white)]">
           Frequently Asked Questions
         </span>
-        <p className="text-lg text-center text-zinc-600">
+        <p className="text-lg text-center text-[var(--bg-input-color)]">
           Get answers to your questions and learn about our platform
         </p>
       </div>
@@ -67,19 +67,19 @@ const Accordion = () => {
             <div
               key={index}
               onClick={() => handleClick(item.id)}
-              className="flex flex-col gap-2 px-6 py-4 border rounded-lg cursor-pointer border-slate-300"
+              className="flex flex-col gap-2 px-6 py-4 border rounded-lg cursor-pointer border-slate-400"
             >
               <div className="flex items-center justify-between">
                 <h4 className="text-lg font-bold">{item.question}</h4>
                 <FontAwesomeIcon
                   icon={faChevronDown}
-                  className={`text-zinc-500 ${
+                  className={`bg-[--bg-input-color] ${
                     item.isOpen ? "rotate-180" : ""
                   } transition-transform duration-300 ease-in-out`}
                 />
               </div>
               {item.isOpen && (
-                <div className="text-zinc-600">
+                <div className="text-[bg-input-color]">
                   {item.answer && typeof item.answer === "string" ? (
                     <p>{item.answer}</p>
                   ) : (
