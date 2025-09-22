@@ -51,7 +51,7 @@ const Accordion = () => {
   return (
     <div className="flex flex-col gap-8 p-8 py-20 border-b sm:py-30 text-[var(--color-neutral)]">
       <div className="flex flex-col items-center gap-4">
-        <button className="px-5 py-2 font-medium border rounded-4xl bg-[var(--color-neutral_dark_gray)]">
+        <button className="px-5 py-2 font-medium border-b border-[var(--bg-input-color)] rounded-4xl ">
           FAQ Section
         </button>
         <span className="text-3xl font-bold text-center text-[var(--color-neutral_off_white)]">
