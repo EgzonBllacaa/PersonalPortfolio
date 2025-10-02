@@ -1,6 +1,25 @@
 {
   "project": [
     {
+      "title": "JoinUp",
+      "description": [
+        "Full-stack chat application enabling users to send and receive messages in real-time.",
+        "Users can easily manage their profiles, see who’s online, and enjoy a clean, intuitive interface.",
+        "Tech Stack: Next.js, TypeScript, Tailwind CSS, Firebase Authentication, Firebase Firestore",
+        "Deployment: Frontend and backend hosted on Vercel."
+      ],
+      "year": 2025,
+      "role": "Full-stack Developer",
+      "images": [
+        "/JoinUp.png",
+        "/JoinUp-2.png",
+        "/JoinUp-3.png",
+        "/JoinUp-4.png"
+      ],
+      "githubRepo": "https://github.com/EgzonBllacaa/Chat",
+      "live": "https://chat-swart-seven.vercel.app/"
+    },
+    {
       "title": "Flicker",
       "description": [
         "Full-stack social media app where users can create posts, like, comment, and manage profiles.",
